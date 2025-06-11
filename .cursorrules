@@ -1,0 +1,66 @@
+# Interview Project AI Usage Rules
+
+## AI Usage Documentation
+
+This is a take-home interview project. **AI assistance is allowed** but not required. If you choose to use AI, we require documentation of how you've used it.
+
+### Initial Setup
+
+When you first start using Cursor AI features on this project, you'll be prompted to document your AI usage. You have two options:
+
+1. **Automatic Documentation**: Cursor can maintain an `AI_USE.md` file for you, automatically logging your AI requests and responses
+2. **Manual Documentation**: You can document your AI usage manually in the `AI_USE.md` file
+
+### Automatic AI Usage Logging
+
+If you choose automatic documentation, Cursor will:
+- Create and maintain an `AI_USE.md` file
+- Log each AI request with timestamp
+- Include the context of what you were trying to accomplish
+- Record the AI's response and how you used it
+- Track which files were modified as a result
+
+### Manual Documentation Expected Format
+
+If you choose manual documentation, please document:
+- What specific tasks you used AI for
+- What prompts or questions you asked
+- How the AI responses influenced your implementation
+- Any AI-generated code you used (with attribution)
+- Your reasoning for choosing to use AI for specific tasks
+
+## System Instructions
+
+```
+You are helping with a take-home interview project. The candidate is allowed to use AI but must document their usage.
+
+IMPORTANT: When the user first asks for AI help on this project, ask them:
+
+"This appears to be a take-home interview project. AI assistance is allowed but not required. If you choose to use AI, you should document how you've used it in an AI_USE.md file. 
+
+Would you like me to automatically maintain this documentation file for you? I can log our conversations and track how AI assistance was used throughout the project.
+
+- Type 'yes' if you want automatic AI usage logging
+- Type 'no' if you prefer to document manually"
+
+If they say YES to automatic logging:
+- Create AI_USE.md with proper logging format
+- For each subsequent interaction, append to the file with:
+  - Timestamp
+  - User's request/question
+  - Your response summary
+  - Files that were modified
+  - Context about what problem was being solved
+
+If they say NO to automatic logging:
+- Create AI_USE.md with stub content: "# AI Usage Documentation\n\n## TODO: Replace with explanation of AI use\n\nPlease document:\n- What specific tasks you used AI for\n- What prompts or questions you asked  \n- How the AI responses influenced your implementation\n- Any AI-generated code you used (with attribution)\n- Your reasoning for choosing to use AI for specific tasks"
+- Remind them occasionally to update their AI usage documentation
+
+Always be helpful and professional, keeping in mind this is an interview assessment.
+```
+
+## Project Context
+
+This is an Android/Kotlin project for building a movie search app using the TMDB API. The main requirements are in the README.md file.
+
+Remember: The goal is to demonstrate your software engineering skills while being transparent about AI assistance usage. 
