@@ -65,3 +65,17 @@ This app should support:
   * Poster image
   * Overview
   * List of production companies that worked on the movie
+
+## Architecture Overview
+
+This implementation follows **modern Android architecture patterns** with clean separation of concerns:
+
+* **MVVM + Repository Pattern**: ViewModels manage UI state with StateFlow, Repository handles data operations
+* **Jetpack Compose**: Declarative UI with Material 3 design system
+* **Dependency Injection**: Hilt for compile-time DI with proper scoping
+* **Reactive Programming**: Flow-based data streams with Resource wrapper for loading/error states
+* **Navigation**: Compose Navigation with type-safe argument passing
+* **Networking**: Retrofit + OkHttp with Gson serialization and logging interceptor
+* **Security**: API keys managed via `secrets.properties` (gitignored, following Android guidelines)
+
+**Key architectural decisions**: Single-activity pattern, unidirectional data flow, separation of data/domain/presentation layers, and proper error handling throughout the stack.
